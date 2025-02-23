@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic Forms Technical Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Doppio+One&display=swap" rel="stylesheet">
+    
+    <link href="styles.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container">
+        <main id="main-doc">
+          <nav id="navbar">
+            <img id="symbol" src="https://i.ibb.co/4Z5061mN/Sonic-Symbol.png" alt="Sonic-Symbol" border="0">
+            <header class="navheader">Forms of Sonic</header>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#Key_Forms">Key Forms</a>
+            <a class="nav-link" href="#Mechanics">Mechanics</a>
+            <a class="nav-link" href="#Forms_in_code">Forms in Code</a>
+            <a class="nav-link" href="#Abilities">Abilities</a>
+            <a class="nav-link" href="#Evolution">Evolution</a>
+            <a class="nav-link" href="#Weaknesses">Weaknesses</a>
+          </nav>
+          <img id="supers" src="https://i.ibb.co/btCf2Ds/Sonic-Forms.png" alt="Sonic-Forms" border="0">
+          <section class="main-section" id="Introduction">
+            <header class="newheader">Introduction</header>
+            <p>Sonic the Hedgehog has many different forms throughout his adventures, each granting him new abilities and powers. From his standard form to more powerful transformations, these forms are key to his battles against Dr. Eggman and other threats. This section provides an overview of Sonic's different forms and the mechanics behind them.</p>
+          </section>
+          <section class="main-section" id="Key_Forms">
+            <header class="newheader">Key Forms</header>
+            <ul>
+              <li>Standard Sonic (Classic and Modern): The base form of Sonic, featuring his characteristic blue color, red shoes, and spiky quills.</li>
+              <li>Super Sonic: A powerful transformation that occurs when Sonic collects all seven Chaos Emeralds, turning him golden and granting invulnerability and increased strength.</li>
+              <li>Hyper Sonic: A more advanced form of Super Sonic, seen in Sonic 3 & Knuckles, with enhanced abilities like the ability to flash through levels and gain even greater power.</li>
+              <li>Dark Sonic: A transformation in which Sonic taps into darker emotions, leading to a more ruthless and aggressive version of himself. Appears in Sonic X.</li>
+              <li>Werehog Sonic: A transformation that occurs in Sonic Unleashed when Sonic is cursed by the power of Dark Gaia, transforming into a werewolf-like creature with increased strength and slower speed.</li>
+            </ul>
+          </section>
+          <section class="main-section" id="Mechanics">
+            <header class="newheader">Mechanics</header>
+            <p>Sonic's various forms usually involve different mechanics and power-ups that allow him to perform unique actions. This section explains the rules, conditions, and powers associated with each form.</p>
+            <header>List of Mechanics:</header>
+            <ul>
+              <li>Chaos Emeralds: Sonic's transformation into Super Sonic requires all seven Chaos Emeralds, and the power to maintain this form drains over time.</li>
+              <li>Rings: In the Super Sonic form, rings act as a timer. As Sonic uses up rings, he loses his Super Sonic form once the ring count reaches zero.</li>
+              <li>Transformation Triggers: In games like Sonic Heroes and Sonic Generations, Sonic can trigger transformations by collecting special items or reaching certain conditions.</li>
+              <li>Energy Usage: The Hyper Sonic form consumes more energy than Super Sonic, but it grants significantly more power and faster abilities.</li>
+              <li>Werehog Form: When Sonic becomes a Werehog, his speed decreases, but his strength and ability to fight enemies increase. He also uses combat-based moves that differ from his normal speed-based attacks.</li>
+            </ul>
+          </section>
+          <section class="main-section" id="Forms_in_code">
+            <header class="newheader">Forms in Code</header>
+            <p>Here are example snippets of code (described without actual implementation) that outline the behavior of some of Sonic's forms, focusing on game logic for transformations</p>
+            <code>
+              function triggerSuperSonic() {
+              if (collectedChaosEmeralds === 7) {
+              sonic.transformToSuperSonic();
+              console.log("Sonic transformed into Super Sonic!");
+              }
+              }
+            </code>
+            <code>function updateSuperSonicState() { if (sonic.isSuperSonic) { sonic.rings -= 1; if (sonic.rings <= 0) { sonic.revertToNormal(); console.log("Super Sonic transformation ended due to lack of rings!"); } } } </code>
+                <code>
+                  function activateHyperSonic() { if (sonic.hasHyperEmeralds) { sonic.powerUp('Hyper Sonic'); console.log("Hyper Sonic activated with greater power!"); } }
+                </code>
+                <code>
+                  function triggerDarkSonic() { if (sonic.emotionLevel === 'Rage') { sonic.transformToDarkSonic(); console.log("Sonic has transformed into Dark Sonic!"); } }
+                </code>
+                <code>
+                  function werehogAttack() { if (sonic.isWerehog) { sonic.attack('punch', 20); // Werehog form has stronger punch console.log("Sonic uses his Werehog strength to attack!"); } }
+                </code>
+          </section>
+          <section class="main-section" id="Abilities">
+            <header class="newheader">Abilities</header>
+            <br>
+            <header>List of Abilities:</header><br>
+            <header>Super Sonic Abilities:</header>
+            <p>Sonic is invulnerable to most attacks while in Super Sonic form. He can move faster than his regular form, and can even hover or fly!</p>
+            <header>Hyper Sonic Abilities:</header>
+            <p>Hyper Sonic moves even faster than Super Sonic. When Hyper Sonic jumps, he flashes, clearing enemies in his path. He's also invulnerable to damage!</p>
+            <header>Dark Sonic Abilities:</header>
+            <p>Dark Sonics physical strength and attacks are far more powerful. He can unleash powerful, destructive attacks. Dark Sonic becomes more aggressive and less calculated than his standard form.</p>
+            <header>Werehog Abilities:</header>
+            <p>The Werehog transformation grants Sonic immense physical strength for powerful attacks.Unlike his normal form, Sonic is slower but much more durable.He's designed more for hand-to-hand combat rather than speed.</p>
+          </section>
+          <section class="main-section" id="Evolution">
+            <header class="newheader">Evolution</header>
+            <br>
+            <header>List of Games Featuring Different Forms:</header><br>
+            <header>Super Sonic:</header>
+            <ul>
+              <li>Sonic The Hedgehog 2 (1992)</li>
+              <li>Sonic 3 & Knuckles (1994)</li>
+              <li>Sonic Generations (2011)</li>
+              <li>Sonic Frontiers (2022)</li>
+            </ul>
+            <header>Hyper Sonic:</header>
+            <ul>
+              <li>Sonic 3 & Knuckles (1994)</li>
+            </ul>
+            <header>Dark Sonic:</header>
+            <ul>
+              <li>Sonic X (2003 Anime)</li>
+            </ul>
+            <header>Werehog Sonic:</header>
+            <ul>
+              <li>Sonic Unleashed (2008)</li>
+              <li>Sonic Forces: Speed Battle (2021)</li>
+            </ul>
+            <header>Other Forms:</header>
+            <ul>
+              <li>Super Shadow (2001)</li>
+              <li>Super Silver (2006)</li>
+            </ul>
+          </section>
+          <section class="main-section" id="Weaknesses">
+            <header class="newheader">Weaknesses</header><br>
+            <header>Super Sonic:</header>
+            <p>The form can only be maintained as long as Sonic has rings. If used for too long, the energy required to maintain Super Sonic can leave Sonic exhausted or vulnerable.</p>
+            <header>Hyper Sonic:</header>
+            <p>Hyper Sonic consumes even more rings than Super Sonic and can only be maintained for a short period. Not every Sonic game features Hyper Sonic, making it a rare transformation.</p>
+            <header>Dark Sonic:</header>
+            <p>Dark Sonic is driven by anger, making him less predictable and harder to control. While powerful, Dark Sonic's reliance on rage can sometimes lead to mistakes or miscalculations.</p>
+            <header>Werehog:</header>
+            <p>Sonic's Werehog form is much slower than his normal form, making it harder for him to dodge attacks. His transformation sacrifices speed and agility for strength, leaving him vulnerable to fast-moving enemies.</p>
+          </section>
+        </main>
+      </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin and padding*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+  /* Main CSS starts */
+  
+  body {
+    background-color: #0C2367;
+  }
+  
+   #main-doc {
+     background-color: #0C2367;
+     position: absolute;
+     margin-top: 20px;
+     margin-left: 260px;
+     font-family: Doppio One;
+     color: #D8E1FB;
+     width: 58%;
+     padding-left: 20px;
+  }
+  
+  #supers {
+    display: block;
+    border-radius: 10px;
+    border: 4px solid #D8E1FB;
+    margin: 0 auto;
+  }
+  
+  section {
+    margin: 24px 0px;
+  }
+  
+  .newheader {
+    font-family: Black Han Sans;
+    font-size: 36px;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+  
+  code {
+    background-color: #081642;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    background-color: #BAC9F8;
+  }
+  
+  .navheader {
+    font-family: Black Han Sans;
+    font-size: 24px;
+    text-align: center;
+    color: #0C2367;
+    border-bottom: 2px solid #0C2367;
+  }
+  
+  #symbol {
+    margin-top: 20px;
+  }
+  
+  .nav-link {
+    display:block;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  @media only screen and (max-width: 760px){
+    #navbar{
+      position: sticky;
+      top: 0px;
+      max-height: 16%;
+      width: 100%;
+    }
+    
+    .nav-link {
+      display: block;
+      text-align: center;
+    }
+  }
