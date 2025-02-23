@@ -1,132 +1,188 @@
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  /* 2. Remove default margin and padding*/
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    /* 3. Add accessible line-height */
-    line-height: 1.5;
-    /* 4. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  /* 5. Improve media defaults */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  
-  /* 6. Inherit fonts for form controls */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  
-  /* 7. Avoid text overflows */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  
-  /* 8. Improve line wrapping */
-  p {
-    text-wrap: pretty;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
-  }
-  
-  /*
-    9. Create a root stacking context
-  */
-  #root, #__next {
-    isolation: isolate;
-  }
-  
-  /* Main CSS starts */
-  
-  body {
-    background-color: #0C2367;
-  }
-  
-   #main-doc {
-     background-color: #0C2367;
-     position: absolute;
-     margin-top: 20px;
-     margin-left: 260px;
-     font-family: Doppio One;
-     color: #D8E1FB;
-     width: 58%;
-     padding-left: 20px;
-  }
-  
-  #supers {
-    display: block;
-    border-radius: 10px;
-    border: 4px solid #D8E1FB;
-    margin: 0 auto;
-  }
-  
-  section {
-    margin: 24px 0px;
-  }
-  
-  .newheader {
-    font-family: Black Han Sans;
-    font-size: 36px;
-  }
-  
-  p {
-    font-size: 20px;
-  }
-  
-  code {
-    background-color: #081642;
-  }
-  
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin and padding*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* MAIN CSS STARTS HERE */
+
+body {
+  background-color: #0c2367;
+}
+
+#main-doc {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 28%;
+  font-family: Doppio One;
+  color: #d8e1fb;
+  width: 60%;
+  padding: 0px 20px;
+  border: 1px solid red;
+}
+
+#supers {
+  display: block;
+  border-radius: 10px;
+  border: 4px solid #d8e1fb;
+  margin: 0 auto;
+}
+
+section {
+}
+
+.newheader {
+  font-family: Black Han Sans;
+  font-size: 36px;
+}
+
+.subheader {
+  font-family: Black Han Sans;
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+p {
+  font-size: 20px;
+}
+
+ul {
+  display: block;
+}
+
+li {
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+code {
+  font-size: 20px;
+  display: block;
+  background-color: #081642;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 240px;
+  background-color: #bac9f8;
+}
+
+.navheader {
+  font-family: Black Han Sans;
+  font-size: 24px;
+  text-align: center;
+  color: #0c2367;
+  border-bottom: 2px solid #0c2367;
+}
+
+#symbol {
+  padding: 20px 0px;
+}
+
+.nav-link {
+  display: block;
+  font-family: Doppio One;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #0c2367;
+  font-size: 20px;
+  margin: 12px 8px;
+}
+
+a:active {
+  color: #0c2367;
+}
+
+a:hover {
+  background-color: #0c2367;
+  color: #bac9f8;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+@media only screen and (max-width: 760px) {
   #navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 240px;
-    background-color: #BAC9F8;
+    position: sticky;
+    top: 0px;
+    max-height: 16%;
+    width: 100%;
   }
-  
-  .navheader {
-    font-family: Black Han Sans;
-    font-size: 24px;
-    text-align: center;
-    color: #0C2367;
-    border-bottom: 2px solid #0C2367;
-  }
-  
-  #symbol {
-    margin-top: 20px;
-  }
-  
+
   .nav-link {
-    display:block;
+    display: block;
+    text-align: center;
+    font-family: Doppio One;
   }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  @media only screen and (max-width: 760px){
-    #navbar{
-      position: sticky;
-      top: 0px;
-      max-height: 16%;
-      width: 100%;
-    }
-    
-    .nav-link {
-      display: block;
-      text-align: center;
-    }
-  }
+}
